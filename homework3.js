@@ -73,17 +73,18 @@ console.log(myfunc ("lol","lmao",5));
 
 //-Create a function runStuff that takes two numbers and a string.  If the string is 'rectangle', return the area of a rectangle using the two numbers as base and height.  If the string is 'triangle', return the area of a triangle (you can use the triangleArea function here).  If the string does not match 'rectangle' or 'triangle', return -1
 
-const runStuff = (str2,num44,num45)
-{
+const runStuff = function (str2,base2,height2) {
+
     if (str2 === "rectangle") {
-        return num44 * num45;
-    } else if (str2 === "triangle") {
-        return (num44*num45)/2;
-    } else {return -1;}
-}
-
-
-
+      return base2 * height2; 
+    }
+       else if (str2 === "triangle") {
+          return AreaTriangle (base2,height2);
+      }
+     else {return -1;}
+  }
+    console.log (runStuff("triangle",10,50));
+  
 
 
 
